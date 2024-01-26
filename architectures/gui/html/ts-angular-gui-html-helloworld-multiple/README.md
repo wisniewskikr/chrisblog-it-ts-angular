@@ -22,12 +22,16 @@ USAGE IMAGES
 
 ![My Image](readme-images/image-01.png)
 
+![My Image](readme-images/image-02.png)
+
+![My Image](readme-images/image-03.png)
+
 
 DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **multiple** HTML pages: first page **Init** contains link to second page and second page **Hello World** displays message.
 
 ##### Terminology
 Terminology explanation:
