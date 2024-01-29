@@ -6,6 +6,7 @@ USAGE COMMANDS
 > Please **clone/download** project, open **project's main folder** in your favorite **command line tool** and then **proceed with steps below**. 
 
 Usage steps:
+1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `ng serve`
 1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
    * Expected **Init** page
