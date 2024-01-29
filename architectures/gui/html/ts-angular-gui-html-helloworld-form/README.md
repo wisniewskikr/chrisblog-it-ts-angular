@@ -9,7 +9,9 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `ng serve`
 1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
-   * Expected **Hello World** page
+   * Expected **Hello World** page with "Name" field
+1. In a http browser (e.g. Chrome) fill **name** (e.g. Chris) and click **Submit** button
+   * Expected message **Hello World Chris!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -19,12 +21,14 @@ USAGE IMAGES
 
 ![My Image](readme-images/image-01.png)
 
+![My Image](readme-images/image-02.png)
+
 
 DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to use **form** in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
