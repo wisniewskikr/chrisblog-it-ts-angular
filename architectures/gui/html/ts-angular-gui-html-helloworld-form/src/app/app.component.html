@@ -1,3 +1,17 @@
 <div>
-  {{ message }}
+  <img src="" alt="Hello World"/>
 </div>
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" />
+    </div>
+    <div>
+      <button
+        type="submit"
+        (click)="$event.preventDefault()"
+      >
+        Submit
+      </button>
+    </div>
+</form>

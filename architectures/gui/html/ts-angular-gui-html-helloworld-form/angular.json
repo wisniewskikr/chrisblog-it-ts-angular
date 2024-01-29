@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ts-angular-gui-html-helloworld-single:build:production"
+              "buildTarget": "ts-angular-gui-html-helloworld-form:build:production"
             },
             "development": {
-              "buildTarget": "ts-angular-gui-html-helloworld-single:build:development"
+              "buildTarget": "ts-angular-gui-html-helloworld-form:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ts-angular-gui-html-helloworld-single:build"
+            "buildTarget": "ts-angular-gui-html-helloworld-form:build"
           }
         },
         "test": {
