@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -15,11 +15,19 @@ export class AppComponent {
   message = '';
 
   nameForm = new FormGroup({
-    name: new FormControl('')
+    name: new FormControl('', Validators.required)
   });
 
   sendName() {
-    this.message = "Hello World " + this.nameForm.controls['name'].value;
+    const name = this.nameForm.controls['name'].value;
+
+    if (name == null || name == '') {
+      this.message = '';
+      this.nameForm.controls['name'].markAsDirty();
+      return;
+    }
+
+    this.message = "Hello World " + name;
     this.nameForm.controls['name'].reset();
   }
 
