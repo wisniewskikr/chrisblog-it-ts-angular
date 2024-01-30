@@ -1,0 +1,22 @@
+<form
+[formGroup]="nameForm"
+>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" formControlName="name" />
+        <small
+          *ngIf="nameForm.get('name')?.dirty && nameForm.get('name')?.hasError('required')"
+        >
+          This field is required.
+        </small>
+    </div>
+    <div>
+      <button
+        type="submit"
+        (click)="$event.preventDefault(); sendName();"
+      >
+        Submit
+      </button>
+    </div>
+</form>
+<div *ngIf="message"> {{message}} </div>
