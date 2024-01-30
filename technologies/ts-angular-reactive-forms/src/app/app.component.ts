@@ -1,23 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule],
+  imports: [RouterOutlet, CommonModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   
-  name = '';
+  name = new FormControl('');
   message = '';
 
   sendName() {
-    this.message = "Hello World " + this.name;
-    this.name = '';
+    this.message = "Hello World " + this.name.value;
+    this.name.reset();
   }
 
 }
