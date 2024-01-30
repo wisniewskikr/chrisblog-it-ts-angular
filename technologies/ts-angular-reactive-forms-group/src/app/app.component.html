@@ -1,7 +1,9 @@
-<form>
+<form
+[formGroup]="nameForm"
+>
     <div>
         <label for="name">Name:</label>
-        <input type="text" name="name" [formControl]="name" />
+        <input type="text" name="name" formControlName="name" />
     </div>
     <div>
       <button

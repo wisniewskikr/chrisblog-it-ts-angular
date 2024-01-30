@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -12,12 +12,15 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   
-  name = new FormControl('');
   message = '';
 
+  nameForm = new FormGroup({
+    name: new FormControl('')
+  });
+
   sendName() {
-    this.message = "Hello World " + this.name.value;
-    this.name.reset();
+    this.message = "Hello World " + this.nameForm.controls['name'].value;
+    this.nameForm.controls['name'].reset();
   }
 
 }
