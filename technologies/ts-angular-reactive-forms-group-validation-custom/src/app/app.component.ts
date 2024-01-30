@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { customRequired } from './customRequired';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent {
   message = '';
 
   nameForm = new FormGroup({
-    name: new FormControl('', Validators.required)
+    name: new FormControl('', customRequired)
   });
 
   sendName() {
