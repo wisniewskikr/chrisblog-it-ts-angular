@@ -28,14 +28,14 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **Template Driven Forms** in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
+The goal of this project is to present how to **send data without forms** in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
 * **TypeScript**: is an extension of JavaScript programming language. Main difference between them is that TypeScript enables defining types for variables - string, boolean, number etc. In this way developer knows type for variables.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **Angular framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
-* **Template Driven Forms**: this kind of forms should be used for simple forms.
+* **Send data without forms**: in Angular in HTML file you can use '#' to create javascript object from HTML element. Then you can send value of this object.
 
 ##### Flow
 The following flow takes place in this project:
