@@ -8,12 +8,20 @@
       />
   </div>
   <div>
-    <button
-      type="button"
+    <a
+      *ngIf="!message"
+      href="#"
       (click)="$event.preventDefault(); sendName(name.value); name.value = '';"
     >
-      Submit
-    </button>
+      Create
+    </a>
+    <a
+      *ngIf="message"
+      href="#"
+      (click)="$event.preventDefault(); back();"
+    >
+      Back
+    </a>
   </div>
   <div *ngIf="message"> {{message}} </div>
 </div>

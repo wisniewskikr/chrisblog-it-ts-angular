@@ -18,4 +18,8 @@ export class AppComponent {
     this.message = "Hello World " + name;
   }
 
+  back() {
+    this.message = '';
+  }
+
 }
