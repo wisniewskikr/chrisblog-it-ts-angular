@@ -10,8 +10,10 @@ Usage steps:
 1. In a command line tool start application with `ng serve`
 1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
    * Expected **Hello World** page with "Name" field
-1. In a http browser (e.g. Chrome) fill **name** (e.g. Chris) and click **Submit** button
+1. In a http browser (e.g. Chrome) fill **name** (e.g. Chris) and click **Create** link
    * Expected message **Hello World Chris!**
+1. In a http browser (e.g. Chrome) click **Back** link
+   * Expected message **Hello World** page with "Name" field
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -28,14 +30,14 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to **send data without forms** in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
+The goal of this project is to present how to create an **example** application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
 * **TypeScript**: is an extension of JavaScript programming language. Main difference between them is that TypeScript enables defining types for variables - string, boolean, number etc. In this way developer knows type for variables.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **Angular framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
-* **Send data without forms**: in Angular in HTML file you can use '#' to create javascript object from HTML element. Then you can send value of this object.
+* **Example application**: this example Angular application contains image, styles, HTML elements and javascript styles.
 
 ##### Flow
 The following flow takes place in this project:
