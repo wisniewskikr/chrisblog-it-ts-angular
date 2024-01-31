@@ -1,0 +1,16 @@
+  <div>
+      <label for="name">Name:</label>
+      <input 
+        #name
+        type="text" 
+      />
+  </div>
+  <div>
+    <button
+      type="button"
+      (click)="$event.preventDefault(); sendName(name.value); name.value = '';"
+    >
+      Submit
+    </button>
+  </div>
+<div *ngIf="message"> {{message}} </div>
