@@ -12,12 +12,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   
-  name = '';
   message = '';
 
-  sendName() {
-    this.message = "Hello World " + this.name;
-    this.name = '';
+  sendName(name: string) {
+    this.message = "Hello World " + name;
   }
 
 }

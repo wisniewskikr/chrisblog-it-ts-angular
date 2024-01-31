@@ -1,24 +1,16 @@
-<form
-  (ngSubmit)="$event.preventDefault(); sendName();"
->
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" [(ngModel)]="name" />
-    </div>
-    <div>
-      <!-- For test purpose using "ngSubmit". 
-        But both methods work fine. -->
-      <!-- button
-        type="submit"
-        (click)="$event.preventDefault(); sendName();"
-      >
-        Submit
-      </button -->
-      <button
-        type="submit"
-      >
-        Submit
-      </button>
-    </div>
-</form>
+  <div>
+      <label for="name">Name:</label>
+      <input 
+        #name
+        type="text" 
+      />
+  </div>
+  <div>
+    <button
+      type="button"
+      (click)="$event.preventDefault(); sendName(name.value); name.value = '';"
+    >
+      Submit
+    </button>
+  </div>
 <div *ngIf="message"> {{message}} </div>
