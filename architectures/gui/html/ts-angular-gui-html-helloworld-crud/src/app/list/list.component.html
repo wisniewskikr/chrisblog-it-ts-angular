@@ -13,13 +13,14 @@
     <a href="#" id="update-link">Update</a>
     <a href="#" id="delete-link">Delete</a>
 </div>
+    
+<div *ngIf="messages.length != 0">
+    <div *ngFor="let message of messages">
+        <input type='radio' name='messages' id='{{message.id}}' value='{{message.id}}'/>
+        <label for="{{message.id}}">{{message.text}}</label>
+    </div>
+</div> 
 
-<div> 
-    
-        <div *ngIf="messages.length != 0">
-            <input type='radio' name='messages' id='value' value='value'/>
-            <label for="value">Name</label>
-        </div>                      
-        <p *ngIf="messages.length == 0" id="empty">There is no messages yet</p>
-    
+<div *ngIf="messages.length == 0">
+    <p id="empty">There is no messages yet</p>
 </div>
