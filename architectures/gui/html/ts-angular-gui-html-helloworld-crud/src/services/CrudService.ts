@@ -1,6 +1,6 @@
 import { Message } from "../models/Message";
 
-export class Crud {
+export class CrudService {
 
     messages: Message[] = [];
     messageId = 1;
