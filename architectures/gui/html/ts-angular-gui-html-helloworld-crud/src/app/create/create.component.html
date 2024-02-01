@@ -1,1 +1,13 @@
-<p>create works!</p>
+<h4>Create Message</h4>
+
+<table>            
+    <tr>
+        <td><label for="text">Message Text</label></td>
+        <td><input #text type="text" id="text" name="text"/></td>
+    </tr>
+</table>
+
+<div>
+    <a routerLink="" (click)="$event.preventDefault(); create(text.value);">Create</a>
+    <a routerLink="">Back</a>
+</div>
