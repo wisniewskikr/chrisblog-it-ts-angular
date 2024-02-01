@@ -1,6 +1,6 @@
 <h4>List Messages</h4>
 
-<div id="menu-texts">
+<div id="menu-texts" >
     <a routerLink="create">Create</a>
     <span>View</span>        
     <span>Update</span>
@@ -16,10 +16,10 @@
 
 <div> 
     
-        <div>
+        <div *ngIf="messages.length != 0">
             <input type='radio' name='messages' id='value' value='value'/>
             <label for="value">Name</label>
         </div>                      
-        <p id="empty">There is no messages yet</p>
+        <p *ngIf="messages.length == 0" id="empty">There is no messages yet</p>
     
 </div>

@@ -5,7 +5,7 @@ export class CrudService {
     messages: Message[] = [];
     messageId = 1;
 
-    readAll() {
+    public readAll() {
         return this.messages;
     }
 
