@@ -16,7 +16,13 @@
     
 <div *ngIf="messages.length != 0">
     <div *ngFor="let message of messages">
-        <input type='radio' name='messages' id='{{message.id}}' value='{{message.id}}'/>
+        <input 
+            type='radio' 
+            name='messages' 
+            id='{{message.id}}'
+            [value]='message.id'
+            [(ngModel)]='selectedMessageId'
+        />
         <label for="{{message.id}}">{{message.text}}</label>
     </div>
 </div> 
