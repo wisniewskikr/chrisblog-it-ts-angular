@@ -1,5 +1,9 @@
 import { Message } from "../models/Message";
+import { Injectable } from '@angular/core';
 
+@Injectable({
+  providedIn: 'root',
+})
 export class CrudService {
 
     messages: Message[] = [];

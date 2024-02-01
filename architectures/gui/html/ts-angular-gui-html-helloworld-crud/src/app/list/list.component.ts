@@ -9,8 +9,7 @@ import { CrudService } from '../../services/CrudService';
   standalone: true,
   imports: [RouterLink, CommonModule],
   templateUrl: './list.component.html',
-  styleUrl: './list.component.css',
-  providers: [CrudService]
+  styleUrl: './list.component.css'
 })
 export class ListComponent implements OnInit {  
 
