@@ -7,6 +7,6 @@ import { ViewComponent } from './view/view.component';
 export const routes: Routes = [
     { path: '', component: ListComponent },
     { path: 'create', component: CreateComponent },
-    { path: 'view', component: ViewComponent },
+    { path: 'view/:id', component: ViewComponent },
     { path: '**', component: NotFoundComponent }
 ];
