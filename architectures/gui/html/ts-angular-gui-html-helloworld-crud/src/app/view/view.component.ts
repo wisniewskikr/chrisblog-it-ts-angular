@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-view',
@@ -9,5 +9,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './view.component.css'
 })
 export class ViewComponent {
+
+  constructor(private activatedRoute: ActivatedRoute) {
+
+    this.activatedRoute.params.subscribe(params => {
+      console.log(params['id']);
+    });  
+    
+  }
 
 }
