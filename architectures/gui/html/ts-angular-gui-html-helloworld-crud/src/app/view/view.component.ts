@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { CrudService } from '../../services/CrudService';
+import { Message } from '../../models/Message';
 
 @Component({
   selector: 'app-view',
@@ -10,10 +12,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 })
 export class ViewComponent {
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  message: Message | null = null;
+
+  constructor(private activatedRoute: ActivatedRoute, private crudService: CrudService) {
 
     this.activatedRoute.params.subscribe(params => {
-      console.log(params['id']);
+      crudService.readById(params['id']);
     });  
     
   }
