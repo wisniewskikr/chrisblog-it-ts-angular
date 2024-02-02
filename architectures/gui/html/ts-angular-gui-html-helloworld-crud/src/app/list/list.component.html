@@ -1,13 +1,13 @@
 <h4>List Messages</h4>
 
-<div id="menu-texts" >
+<div id="menu-texts" *ngIf="selectedMessageId == null">
     <a routerLink="create">Create</a>
     <span>View</span>        
     <span>Update</span>
     <span>Delete</span>
 </div>
 
-<div id="menu-links" hidden>
+<div id="menu-links" *ngIf="selectedMessageId != null">
     <a routerLink="create" id="create-link">Create</a>
     <a href="#" id="view-link">View</a>        
     <a href="#" id="update-link">Update</a>
