@@ -14,7 +14,8 @@ export class CrudService {
     }
 
     readById(id: number) {
-        return this.messages.find((c) => c.id == id);
+        const message = this.messages.find((c) => c.id == id);
+        return message ?? null;
     }
 
     create(text: string) {

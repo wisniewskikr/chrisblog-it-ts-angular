@@ -3,11 +3,11 @@
 <table>
     <tr>
         <td><label for="id">Message Id</label></td>
-        <td><input type="text" id="id" value="" disabled/></td>
+        <td><input type="text" id="id" [value]="message?.id" disabled/></td>
     </tr>
     <tr>
         <td><label for="text">Message Text</label></td>
-        <td><input type="text" id="text" value="" disabled/></td>
+        <td><input type="text" id="text" [value]="message?.text" disabled/></td>
     </tr>
 </table>
 

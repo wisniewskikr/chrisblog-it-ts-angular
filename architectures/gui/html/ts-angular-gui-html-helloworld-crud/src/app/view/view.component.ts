@@ -17,7 +17,7 @@ export class ViewComponent {
   constructor(private activatedRoute: ActivatedRoute, private crudService: CrudService) {
 
     this.activatedRoute.params.subscribe(params => {
-      crudService.readById(params['id']);
+      this.message = crudService.readById(params['id']);
     });  
     
   }
