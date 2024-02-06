@@ -23,6 +23,12 @@ export class DeleteComponent {
   }
 
   delete(id: string) {
+    
+    if( !confirm( "Are you sure you want to delete this message?" ) ){
+      this.router.navigate(['/delete', id]);
+      return;
+    }
+
     this.crudService.delete(Number(id));
     this.router.navigate(['']);
   }
