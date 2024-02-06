@@ -9,11 +9,25 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `ng serve`
 1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
-   * Expected **Init** page
-1. In a http browser (e.g. Chrome) on **Init** page click **here** link
-   * Expected **Hello World** page
-1. In a http browser (e.g. Chrome) on **Hello World** page click **Back** link
-   * Expected **Init** page
+   * Expected **List Messages** page with empty list
+1. In a html browser (e.g. Chrome) on **List Messages** page click `Create` link
+   * Expected **Create Message** page
+1. In a html browser (e.g. Chrome) on **Create Message** page fill **Message Text** as "Hello World 1" and click `Create` link
+   * Expected **List Messages** page with one item
+1. In a html browser (e.g. Chrome) on **List Messages** page check item and click `View` link
+   * Expected **View Message** page with message data
+1. In a html browser (e.g. Chrome) on **View Message** page click `Back` link
+   * Expected **List Messages** page with one item
+1. In a html browser (e.g. Chrome) on **List Messages** page check item and click `Update` link
+   * Expected **Update Message** page with message data
+1. In a html browser (e.g. Chrome) on **Update Message** page fill **Message Text** as "Hello World 2" and click `Update` link
+   * Expected **List Messages** page with updated item  
+1. In a html browser (e.g. Chrome) on **List Messages** page check item and click `Delete` link
+   * Expected **Delete Message** page with message data
+1. In a html browser (e.g. Chrome) on **Delete Message** page click `Delete` link
+   * Expected **Confirmation** dialog
+1. In a html browser (e.g. Chrome) on **Confirmation** dialog click `Ok` button
+   * Expected **List Messages** page with empty list
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -27,12 +41,26 @@ USAGE IMAGES
 
 ![My Image](readme-images/image-03.png)
 
+![My Image](readme-images/image-04.png)
+
+![My Image](readme-images/image-05.png)
+
+![My Image](readme-images/image-06.png)
+
+![My Image](readme-images/image-07.png)
+
+![My Image](readme-images/image-08.png)
+
+![My Image](readme-images/image-09.png)
+
+![My Image](readme-images/image-10.png)
+
 
 DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **multiple** HTML pages: first page **Init** contains link to second page and second page **Hello World** displays message.
+The goal of this project is to present how to implement **CRUD** (Create, Read, Update, Delete) operations in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
@@ -42,8 +70,9 @@ Terminology explanation:
 
 ##### Flow
 The following flow takes place in this project:
-1. User via any html browser sends request to application for the content.
-1. Application sends back response to user via html browser with message
+1. User via any html browser sends request to application with specific CRUD action: Create, Read, Update or Delete.
+1. Application performs specific CRUD action.
+1. Application sends back response to user via html browser with page. This page is different and depends on specific CRUD action.
 
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
