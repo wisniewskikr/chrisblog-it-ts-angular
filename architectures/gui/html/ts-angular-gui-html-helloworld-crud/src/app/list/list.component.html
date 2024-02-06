@@ -11,7 +11,7 @@
     <a routerLink="create" id="create-link">Create</a>
     <a [routerLink]="['/view', selectedMessageId]" id="view-link">View</a>        
     <a [routerLink]="['/update', selectedMessageId]" id="update-link">Update</a>
-    <a href="#" id="delete-link">Delete</a>
+    <a [routerLink]="['/delete', selectedMessageId]" id="delete-link">Delete</a>
 </div>
     
 <div *ngIf="messages.length != 0">
