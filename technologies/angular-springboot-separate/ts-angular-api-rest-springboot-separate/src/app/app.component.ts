@@ -1,11 +1,11 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -13,10 +13,10 @@ export class AppComponent implements OnInit{
 
   message: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private service: ApiService) {}
 
   ngOnInit(): void {
-    let response = this.http.get("http://localhost:8080/", {responseType: 'text'});
+    let response = this.service.getMessage();
     response.subscribe((data)=>{      
       this.message = data
     });
