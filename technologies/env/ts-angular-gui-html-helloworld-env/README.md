@@ -7,10 +7,14 @@ USAGE COMMANDS
 
 Usage steps:
 1. In a command line tool install nmp packages with `npm install`
+1. In a command line tool start application with `ng serve`
+1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
+   * Expected message **Hello World from DEV!**
+1. In a command line tool stop application with `ctrl + C`
 1. In a command line tool build application with `ng build --configuration=production`
 1. In a command line tool start server with application with `node server.js`
 1. In a http browser (e.g. Chrome) visit `http://localhost:8080`
-   * Expected message **Hello World!**
+   * Expected message **Hello World from PRD!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
