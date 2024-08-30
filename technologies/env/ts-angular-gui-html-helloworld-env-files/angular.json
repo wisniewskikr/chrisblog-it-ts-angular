@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ts-angular-gui-html-helloworld-env": {
+    "ts-angular-gui-html-helloworld-env-files": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ts-angular-gui-html-helloworld-env",
+            "outputPath": "dist/ts-angular-gui-html-helloworld-env-files",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ts-angular-gui-html-helloworld-env:build:production"
+              "buildTarget": "ts-angular-gui-html-helloworld-env-files:build:production"
             },
             "development": {
-              "buildTarget": "ts-angular-gui-html-helloworld-env:build:development"
+              "buildTarget": "ts-angular-gui-html-helloworld-env-files:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ts-angular-gui-html-helloworld-env:build"
+            "buildTarget": "ts-angular-gui-html-helloworld-env-files:build"
           }
         },
         "test": {
