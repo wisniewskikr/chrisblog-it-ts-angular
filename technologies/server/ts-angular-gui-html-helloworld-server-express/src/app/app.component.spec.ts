@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ts-angular-gui-html-helloworld-server' title`, () => {
+  it(`should have the 'ts-angular-gui-html-helloworld-server-express' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ts-angular-gui-html-helloworld-server');
+    expect(app.title).toEqual('ts-angular-gui-html-helloworld-server-express');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ts-angular-gui-html-helloworld-server');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ts-angular-gui-html-helloworld-server-express');
   });
 });

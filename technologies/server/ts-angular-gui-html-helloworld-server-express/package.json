@@ -1,5 +1,5 @@
 {
-  "name": "ts-angular-gui-html-helloworld-server",
+  "name": "ts-angular-gui-html-helloworld-server-express",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
