@@ -6,12 +6,14 @@ USAGE COMMANDS
 > Please **clone/download** project, open **project's main folder** in your favorite **command line tool** and then **proceed with steps below**. 
 
 Usage steps:
-1. In a command line tool install nmp packages with `npm install`
-1. In a command line tool start application with `ng serve`
-1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
-   * Expected **Hello World** page
+1. In a command line tool install globally http server with `npm install -g http-server`
+1. In a command line tool install npm packages with `npm install`
+1. In a command line tool build application with `ng build --configuration=production`
+1. In a command line tool deploy application on server with `http-server dist/ts-angular-gui-html-helloworld-server-httpserver/browser`
+1. In a http browser (e.g. Chrome) visit `http://localhost:8080`
+   * Expected message **Hello World!**
 1. Clean up environment 
-     * In a command line tool stop application with `ctrl + C`
+     * In a command line tool stop server with application with `ctrl + C`
 
 
 USAGE IMAGES
@@ -24,13 +26,15 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to deploy on **server** type **http server** an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
 * **TypeScript**: is an extension of JavaScript programming language. Main difference between them is that TypeScript enables defining types for variables - string, boolean, number etc. In this way developer knows type for variables.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **Angular framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
+* **Server**: A server is a computer or software system that provides services, data, or resources to other computers, known as clients, over a network. Servers can host websites, manage databases, handle email, and perform other tasks to support multiple clients simultaneously.
+* **Http Server**: A JavaScript HTTP server is a server application written in JavaScript that handles HTTP requests and responses. It typically runs on platforms like Node.js, allowing you to create, configure, and manage web servers to serve web pages, APIs, or other resources over the HTTP/HTTPS protocols.
 
 ##### Flow
 The following flow takes place in this project:
