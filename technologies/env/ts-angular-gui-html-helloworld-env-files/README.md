@@ -31,15 +31,16 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to deploy on **server** type **express** an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
+The goal of this project is to present how to use **environment variables** different for **DEV** and **PRD** environmnts in an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
+
+> Please be aware that you have to do changes in **angular.json** file and add property **fileReplacements** for production environment.
 
 ##### Terminology
 Terminology explanation:
 * **TypeScript**: is an extension of JavaScript programming language. Main difference between them is that TypeScript enables defining types for variables - string, boolean, number etc. In this way developer knows type for variables.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **Angular framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
-* **Server**: A "server" is a computer or software that provides services, data, or resources to other computers (clients) over a network.
-* **Express**: A server express is a lightweight web application framework for Node.js, often referred to simply as "Express." It is used to build web applications and APIs, providing a robust set of features for web and mobile applications. Express simplifies tasks such as routing, handling HTTP requests, and managing middleware, making it a popular choice for developers building web services or applications with Node.js.
+* **Environment variables**: Environment variables are dynamic values that can affect the behavior of running processes on a computer. They are used to store configuration settings, such as file paths, system settings, or user preferences, and can be accessed by software applications to adapt their operations without modifying the code.
 
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
