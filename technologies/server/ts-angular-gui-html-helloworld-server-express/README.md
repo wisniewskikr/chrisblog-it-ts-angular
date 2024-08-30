@@ -25,27 +25,18 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to deploy on **server** type **express** an application type **GUI HTML** in **TypeScript** programming language with usage **angular** framework.
 
 ##### Terminology
 Terminology explanation:
 * **TypeScript**: is an extension of JavaScript programming language. Main difference between them is that TypeScript enables defining types for variables - string, boolean, number etc. In this way developer knows type for variables.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **Angular framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
-
-##### Flow
-The following flow takes place in this project:
-1. User via any html browser sends request to application for the content.
-1. Application sends back response to user via html browser with message
+* **Server**: A "server" is a computer or software that provides services, data, or resources to other computers (clients) over a network.
+* **Express**: A server express is a lightweight web application framework for Node.js, often referred to simply as "Express." It is used to build web applications and APIs, providing a robust set of features for web and mobile applications. Express simplifies tasks such as routing, handling HTTP requests, and managing middleware, making it a popular choice for developers building web services or applications with Node.js.
 
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
-
-##### Technologies
-This project uses following technologies:
-* **TypeScript**: `https://docs.google.com/document/d/1uSQvYyzzBnsWEbkcsSoJlK-LfTwHAvh1r2rPP0p2P78/edit?usp=drive_link`
-* **Node** (section 'Node'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
-* **Angular framework**: `https://docs.google.com/document/d/1abvo8-fC1QBjzKLh0vX7kZkTKzbo8H0H2N-l6TnIWI4/edit?usp=sharing`
 
 
 PRECONDITIONS
