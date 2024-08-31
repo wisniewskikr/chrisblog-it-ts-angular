@@ -1,0 +1,3 @@
+{
+    "message": "${MESSAGE:-Default Hello World}"
+}
