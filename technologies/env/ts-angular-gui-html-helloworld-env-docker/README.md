@@ -11,7 +11,7 @@ USAGE COMMANDS
 * **Docker** (texted on version 4.33.1 - it has to be up and running)
 
 Usage steps:
-1. In a command line tool install nmp packages with `npm install`
+1. In a command line tool install npm packages with `npm install`
 1. In a command line tool start application with `ng serve`
 1. In a http browser (e.g. Chrome) visit `http://localhost:4200`
    * Expected message **Hello World from DEV!**
@@ -22,7 +22,7 @@ Usage steps:
    * Expected message **Hello World from PRD!**
 1. In a command line tool stop application with `ctrl + C`
 1. In a command line tool build Docker image with `docker build -t fe-image:0.0.1 .`
-1. In a command line tool build and start Docker container FE with `docker run -p 8080:80 --name fe-container -d fe-image:0.0.1`
+1. In a command line tool build and start Docker container with `docker run -p 8080:80 --name fe-container -d fe-image:0.0.1`
 1. In a http browser (e.g. Chrome) visit `http://localhost:8080`
    * Expected message **Hello World from DOCKER!**
 1. Clean up environment 
@@ -58,16 +58,3 @@ Terminology explanation:
 
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
-
-
-PRECONDITIONS
--------------
-
-##### Preconditions - Tools
-* Installed **Operating System** (tested on Windows 11)
-* Installed **Node** (tested on version 18.18.1)
-* Installed **Angular CLI** (tested on version 17.1.0)
-
-##### Preconditions - Actions
-* Download **Source Code** (using Git or in any other way) 
-* Open any **Command Line** tool (for instance "Windonw PowerShell" on Windows OS) on downloaded **project's main folder**
