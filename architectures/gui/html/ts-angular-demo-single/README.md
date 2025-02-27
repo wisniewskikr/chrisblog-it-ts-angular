@@ -66,8 +66,6 @@ Follow these steps to set up and run the application:
 
 ### Usage Image
 
-
-
 ## Preconditions
 
 ### Required Tools
@@ -79,6 +77,8 @@ Ensure that the following tools are installed before proceeding:
 - **Angular CLI**: 19.1.7
 - **TypeScript**: 5.7.3
 - **Docker**: 27.5.1
+- **Kind**: v0.27.0
+- **kubectl**: v1.32.0
 
 > **Tip:** You can verify the installed versions by running:
 >
@@ -87,6 +87,8 @@ Ensure that the following tools are installed before proceeding:
 > ng version  # Checks Angular CLI version
 > tsc -v  # Checks TypeScript version
 > docker -v  # Checks Docker version
+> kind version  # Checks Kind version
+> kubectl version --client  # Checks kubectl version
 > ```
 
 ### Required Actions
@@ -113,6 +115,65 @@ This project utilizes the following technologies:
 - **Node.js**: JavaScript runtime for executing scripts outside the browser.
 - **Angular Framework**: A powerful front-end framework for building web applications.
 - **Docker**: Used for containerizing the application and running it in a consistent environment.
+- **Kind (Kubernetes in Docker)**: A tool for running local Kubernetes clusters for testing and development.
+
+## Kubernetes Usage
+
+This section describes how to deploy and run the Angular web application using Kubernetes with Kind.
+
+### Step 1: Create a Kind Cluster
+
+Ensure that Kind is installed, then create a Kubernetes cluster:
+
+```sh
+kind create cluster --name angular-demo
+```
+
+### Step 2: Apply Kubernetes Deployment and Service
+
+Use the following command to deploy the application to the Kubernetes cluster:
+
+```sh
+kubectl apply -f angular-deployment.yaml
+```
+
+Since the image is available on Docker Hub, Kubernetes will automatically pull it when deploying.
+
+### Step 3: Check Deployment Status
+
+Verify that the Pods are running:
+
+```sh
+kubectl get pods
+```
+
+Check the service details:
+
+```sh
+kubectl get svc
+```
+
+### Step 4: Access the Application Using Port Forwarding
+
+Since the service is of type `ClusterIP`, use port forwarding to access the application:
+
+```sh
+kubectl port-forward svc/angular-service 8080:80
+```
+
+Then open a browser and navigate to:
+
+```sh
+http://localhost:8080
+```
+
+### Step 5: Clean Up the Cluster
+
+To delete the Kind cluster when you're done testing:
+
+```sh
+kind delete cluster --name angular-demo
+```
 
 ## Usage Docker
 
@@ -145,7 +206,7 @@ An alternative way to run the application is by using `docker-compose`:
 1. Ensure `docker-compose` is installed.
 2. Navigate to the project directory and run:
    ```sh
-   docker-compose up -d
+   docker-compose up -d --build
    ```
 3. The application will be accessible at:
    ```sh
