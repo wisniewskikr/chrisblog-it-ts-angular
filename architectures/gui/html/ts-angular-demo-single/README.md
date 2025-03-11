@@ -66,6 +66,8 @@ Follow these steps to set up and run the application:
 
 ### Usage Image
 
+![Working result](readme-images/image1_1.png)
+
 ## Preconditions
 
 ### Required Tools
@@ -99,7 +101,7 @@ Before running the project, ensure the following actions are completed:
 
   - If using Git, clone the repository:
     ```sh
-    git clone https://github.com/this-repo/angular-hello-world.git
+    git clone https://github.com/wisniewskikr/chrisblog-it-ts-angular.git
     ```
   - Alternatively, download the ZIP file and extract it manually.
 
@@ -192,11 +194,16 @@ This project supports containerized deployment using Docker. Below are the steps
    ```
 4. Run the container:
    ```sh
-   docker run -p 8080:80 angular-app
+   docker run -d --name angular-container -p 8080:80 angular-app
    ```
 5. Open a browser and visit:
    ```sh
    http://localhost:8080
+   ```
+6. Stop and remove the container when you're done:
+  ```sh
+   docker stop angular-container
+   docker rm angular-container
    ```
 
 ### Using Docker Compose

@@ -3,9 +3,11 @@ FROM node:20.11.1-slim AS builder
 WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
+
 RUN npm install
 
 COPY . .
+
 RUN npm run build --omit=dev
 
 FROM nginx:1.25.5-alpine
