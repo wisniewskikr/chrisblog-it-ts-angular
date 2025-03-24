@@ -17,8 +17,6 @@ services:
     build:
       context: ./ts-angular-rest-api-java-springboot-fe
       dockerfile: Dockerfile
-    environment:
-      API_BE_URL: http://be:8080
     ports:
       - "4200:80"
     restart: always
