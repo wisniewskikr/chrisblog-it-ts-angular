@@ -47,9 +47,6 @@ spec:
       containers:
         - name: fe
           image: wisniewskikr/ts-angular-rest-api-java-springboot-fe:0.0.1
-          env:
-            - name: API_BE_URL
-              value: http://be:8080
           ports:
             - containerPort: 80
 ---
